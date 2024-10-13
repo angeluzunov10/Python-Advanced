@@ -1,0 +1,37 @@
+from collections import deque
+
+food = int(input())
+
+orders = deque([int(x) for x in input().split()])
+
+print(max(orders))
+
+for order in orders.copy():
+    if food >= order:
+        orders.popleft()
+        food -= order
+    else:
+        print(f"Orders left:", *orders)
+        break
+else:
+    print("Orders complete")
+
+# второ решение
+#
+# from collections import deque
+#
+# food = int(input())
+#
+# orders = deque([int(x) for x in input().split()])
+#
+# print(max(orders))
+#
+# while orders:
+#     order = orders.popleft()
+#     if food >= order:
+#         food -= order
+#     else:
+#         print(f"Orders left:", order, *orders) -----> + order в print-a, защото горе го pop-нахме и вече не е в orders
+#         break
+# else:
+#     print("Orders complete")

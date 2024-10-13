@@ -1,0 +1,7 @@
+.html
+- - - index.html
+.py
+- - - python_is_better.py
+.txt
+- - - file_1.txt
+- - - output_2.txt
