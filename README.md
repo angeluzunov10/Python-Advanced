@@ -14,4 +14,4 @@
 9. Exam Preparation
 10. Algorithms Introduction
 
-Here you can find all of my solutions for different tasks in Python Fundamentals course, including the mid and final exams.
+Here you can find all of my solutions for different tasks in SoftUni Python Fundamentals course, including the mid and final exams.
